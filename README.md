@@ -6,7 +6,7 @@
 
 - Github access and authentication
 
-- TODO
+- Split up between Mac and Windows
 
 ## Workflow
 
