@@ -21,6 +21,8 @@ If you have any questions about this process, please use the internet as a resou
 - If you have never worked on the project before, start by cloning the repository onto your local machine.
   - In your terminal on your computer, navigate to the directory (folder) where you want the project to live
   - In this directory, run the command `git clone https://github.com/inventioncorps/icb-website-react.git icb-website`
+  - A new directory called `icb-website` should have been created in your directory. You can confirm this by listing all the items in the directory using ls `ls`
+  - Navigate to the `icb-website` folder using `cd icb-website` and run `yarn install`. This ensures your dependencies are up-to-date with what is required for the project. (You should have installed `yarn` in the **setup** above)
 
 ### Contributing
 
