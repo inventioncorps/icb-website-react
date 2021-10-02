@@ -4,6 +4,10 @@
 
 - Install npm
 
+  - install node
+    - make sure node is the correct version
+  - install yarn
+
 - Github access and authentication
 
 - Split up between Mac and Windows
@@ -32,16 +36,20 @@ If you have any questions about this process, please use the internet as a resou
 
 - To start working on a new feature:
 
+  > Remember you can run `git status` to check where you are in the git universe. `git branch` lists all branches you have on your local machine. `git log` lists out commits.
+
   - Make sure you are on the `develop` branch as this will have the latest changes to the codebase. You can run `git checkout develop` to switch to the branch if you are not already there.
-  - Create a new branch called `feature\<name>-<description>` by running the command `git branch feature\<name>-<description>`. Replace`<name>` with your name and `<description>` with a short description of the feature. For example, if Bongi was working on the README he might use the branch name `feature\bongi-readme`.
-  - Checkout (switch to) that branch by running `git checkout feature\<name>-<description>`.
-  - Make sure the remote repository is tracking your local branch. Run `git push -u origin feature\<name>-<description>`
+  - Pull the latest changes from the `develop` by running `git pull`. This is an important step that makes sure you are starting from the most up-to-date code.
+  - Create a new branch called `feature/<name>-<description>` by running the command `git branch feature/<name>-<description>`. Replace`<name>` with your name and `<description>` with a short description of the feature. For example, if Bongi was working on the README he might use the branch name `feature/bongi-readme`.
+  - Checkout (switch to) that branch by running `git checkout feature/<name>-<description>`.
+  - Make sure the remote repository is tracking your local branch. Run `git push -u origin feature/<name>-<description>`
   - You can now work on this feature when you are on this branch.
 
 - When working on a feature:
 
   - Commit often (with useful commit messages). This is best practice and it means you can pick-up where you left-off or revert to a previous state easily.
   - Push somewhat often. This lets you 'save' your work remotely, so anyone else can see what you are doing and you won't lose everything if your computer burns or drowns.
+  - TODO need information about the add, commit, push flow.
 
 - When you are done working on a feature:
   - Remember to commit and push if you have not already.
