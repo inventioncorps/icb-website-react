@@ -33,9 +33,9 @@ If you have any questions about this process, please use the internet as a resou
 - To start working on a new feature:
 
   - Make sure you are on the `develop` branch as this will have the latest changes to the codebase. You can run `git checkout develop` to switch to the branch if you are not already there.
-  - Create a new branch called `feature\<name>-<description>` by running the command `git branch feature\<name>-<description>`. Replace`<name>` with your name and `<description>` with a short description of the feature. For example, if Bongi was working on the README he might use the branch name `feature\bongi-readme`.
-  - Checkout (switch to) that branch by running `git checkout feature\<name>-<description>`.
-  - Make sure the remote repository is tracking your local branch. Run `git push -u origin feature\<name>-<description>`
+  - Create a new branch called `feature/<name>-<description>` by running the command `git branch feature/<name>-<description>`. Replace`<name>` with your name and `<description>` with a short description of the feature. For example, if Bongi was working on the README he might use the branch name `feature\bongi-readme`.
+  - Checkout (switch to) that branch by running `git checkout feature/<name>-<description>`.
+  - Make sure the remote repository is tracking your local branch. Run `git push -u origin feature/<name>-<description>`
   - You can now work on this feature when you are on this branch.
 
 - When working on a feature:
