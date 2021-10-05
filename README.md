@@ -54,6 +54,61 @@ If you have any questions about this process, please use the internet as a resou
 
 TODO
 
+You can create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a *branch*, which ensures that the default branch only contains finished and approved work.
+
+### <u>To submit a pull request:</u>
+1. Push your commit(s) to the remote repository using `git push -u origin feature/<name>-<description>`
+2. Navigate in your browser to the main page of the "[inventioncorps/icb-website-react](https://github.com/inventioncorps/icb-website-react)" repository.
+
+![ICB Repo Main Page](https://user-images.githubusercontent.com/25873509/135940121-00500d49-5e92-45c9-a41b-c005cab88d16.png)
+
+You should see a new notification at the top that your branch had recent pushes. Click the green "Compare & pull request" button.
+
+Alternatively, you can navigate to the "Pull Requests" page, where you will see the same notification and green "Compare & pull request" button.
+
+![Pull Requests page](https://user-images.githubusercontent.com/25873509/135940697-378c1a80-46d3-40f4-bad4-599795ef0854.png)
+
+3. Click this button, which will take you to the "Open a pull request" page.
+
+![Open Pull Request](https://user-images.githubusercontent.com/25873509/135940885-592374ee-4198-4e61-bcd8-dda7bc997370.png)
+
+Here you can write a comment and select the team members who you want to review your changes. 
+
+Select "Reviewers" from the right sidebar.
+
+![Reviewers](https://user-images.githubusercontent.com/25873509/135941195-9d2f8166-c551-4ec8-b106-ba2e931eddaa.png) ![Reviewers Selection](https://user-images.githubusercontent.com/25873509/135941939-72156b5d-1883-4d96-8ca1-a52ec906fb70.png)
+
+4. If not already the case, use the "**base**" branch dropdown menu to select the branch you'd like to merge your changes into. This should be "develop." Then use the "**compare**" branch drop-down menu to choose the topic branch you made your changes in. 
+
+![Base Develop](https://user-images.githubusercontent.com/25873509/135942129-c4cef25d-d2c8-433b-babb-f6da00431386.png)
+![Correct Branch](https://user-images.githubusercontent.com/25873509/135942134-fe18fe3a-186a-4ef2-85b0-98179cc5d761.png)
+
+5. Finally, click the green "Create pull request" button to create a pull request that is ready for review!
+
+![Create pull button](https://user-images.githubusercontent.com/25873509/135942690-eaad8e42-4e27-44af-8774-ec6c3ef97a8b.png)
+
+### <u>What happens next?!</u>
+
+On the "Pull requests" page, you should now see the pull request you just added as an "Open" pull request.
+
+![New pull added](https://user-images.githubusercontent.com/25873509/135943270-fa6a9a08-f5c5-4eef-a32b-3a0a49df4e23.png)
+
+If you click to open this pull request, you will see that a review is required and your new commits will not be merged until they are approved. 
+
+![Review required](https://user-images.githubusercontent.com/25873509/135943583-70c355ed-40b8-453e-8de1-2f6a2bb12a2e.png)
+
+Expanding the code, you can see the changes you commited. Code you added is highlighted in green. Code you deleted is highlighted in red. 
+
+You can also click the green "Review changes" button to add a comment.
+
+![Expanding the code](https://user-images.githubusercontent.com/25873509/135944141-f9e00b6e-f6ae-465a-9a3e-51eaa6798211.png)
+
+Note that you **WILL NOT** be able to "Approve" or "Request changes" to your own pull request. 
+
+![Approve](https://user-images.githubusercontent.com/25873509/135944350-12c87b05-7678-4000-8e9a-d19cd43e94ad.png)
+
+![Request Changes](https://user-images.githubusercontent.com/25873509/135944346-2115c807-70be-4af8-ab2f-dc1ce3b637de.png)
+
 ## Reviewing Code
 
 TODO
