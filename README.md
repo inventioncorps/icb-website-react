@@ -33,7 +33,7 @@ If you have any questions about this process, please use the internet as a resou
 - To start working on a new feature:
 
   - Make sure you are on the `develop` branch as this will have the latest changes to the codebase. You can run `git checkout develop` to switch to the branch if you are not already there.
-  - Create a new branch called `feature/<name>-<description>` by running the command `git branch feature/<name>-<description>`. Replace`<name>` with your name and `<description>` with a short description of the feature. For example, if Bongi was working on the README he might use the branch name `feature\bongi-readme`.
+  - Create a new branch called `feature/<name>-<description>` by running the command `git branch feature/<name>-<description>`. Replace`<name>` with your name and `<description>` with a short description of the feature. For example, if Bongi was working on the README he might use the branch name `feature/bongi-readme`.
   - Checkout (switch to) that branch by running `git checkout feature/<name>-<description>`.
   - Make sure the remote repository is tracking your local branch. Run `git push -u origin feature/<name>-<description>`
   - You can now work on this feature when you are on this branch.
@@ -103,13 +103,13 @@ You can also click the green "Review changes" button to add a comment.
 
 ![Expanding the code](https://user-images.githubusercontent.com/25873509/135944141-f9e00b6e-f6ae-465a-9a3e-51eaa6798211.png)
 
-<u>**Note** that you **WILL NOT** be able to "Approve" or "Request changes" to your own pull request.</u>
+><u>**Note** that you **WILL NOT** be able to "Approve" or "Request changes" to your own pull request.</u>
 
 ![Approve](https://user-images.githubusercontent.com/25873509/135944350-12c87b05-7678-4000-8e9a-d19cd43e94ad.png)
 
 ![Request Changes](https://user-images.githubusercontent.com/25873509/135944346-2115c807-70be-4af8-ab2f-dc1ce3b637de.png)
 
-<u>**Note**</u>: If you push new commits to the same branch while it has an open pull request, you will not need to create another pull request. Your open pull request will record your subsequent commits. 
+><u>**Note**</u>: If you push new commits to the same branch while it has an open pull request, you will not need to create another pull request. Your open pull request will record your subsequent commits. 
 
 ![New push to pull request](https://user-images.githubusercontent.com/25873509/136302295-d1d2fe81-d424-40f3-bde9-83876304d0d0.png)
 
