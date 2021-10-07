@@ -103,14 +103,21 @@ You can also click the green "Review changes" button to add a comment.
 
 ![Expanding the code](https://user-images.githubusercontent.com/25873509/135944141-f9e00b6e-f6ae-465a-9a3e-51eaa6798211.png)
 
-Note that you **WILL NOT** be able to "Approve" or "Request changes" to your own pull request. 
+<u>**Note** that you **WILL NOT** be able to "Approve" or "Request changes" to your own pull request.</u>
 
 ![Approve](https://user-images.githubusercontent.com/25873509/135944350-12c87b05-7678-4000-8e9a-d19cd43e94ad.png)
 
 ![Request Changes](https://user-images.githubusercontent.com/25873509/135944346-2115c807-70be-4af8-ab2f-dc1ce3b637de.png)
 
-## Reviewing Code
+<u>**Note**</u>: If you push new commits to the same branch while it has an open pull request, you will not need to create another pull request. Your open pull request will record your subsequent commits. 
 
+![New push to pull request](https://user-images.githubusercontent.com/25873509/136302295-d1d2fe81-d424-40f3-bde9-83876304d0d0.png)
+
+You can see this more clearly by clicking the "Commits" tab. There are now 2 commits in the same pull request. 
+
+![Commits Tab](https://user-images.githubusercontent.com/25873509/136302288-39172d2b-9200-42bc-81aa-c08b3bef04f4.png)
+
+## Reviewing Code
 TODO
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
