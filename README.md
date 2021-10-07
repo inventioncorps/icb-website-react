@@ -20,6 +20,16 @@ If you have any questions about this process, please use the internet as a resou
 
 ### Getting started
 
+- If you do not have git installed, or you are unsure whether you have git on your machine, follow [this guide](https://github.com/git-guides/install-git).
+- The following instructions are for setting up your github credentials.
+  - Download GitHub CLI or Git Credential Manager Core using the online [instructions](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git). *(Git Credential Manager Core is recommended as the only required steps are downloading it GitHub CLI will require some set up)*
+  - Log into GitHub and click on the icon on the top right in order to access Settings>Developer settings>Personal Access Token.
+  - Click on **Generate new token**
+  - Type in a description for this auth token and set the expiration time.
+  - Under **Select Scopes** select the check box next to **repo**. This will give you read write access to which ever repository you are contributing to.
+  - Click on **Generate token**
+  - Copy the token and save it somewhere temporarily.
+  - When you clone the repository in the next step, you will be asked to provide authentication. Use your Github user name and Authentication token when prompted. Your credentials will be saved until your token expires.
 - If you have never worked on the project before, start by cloning the repository onto your local machine.
   - In your terminal on your computer, navigate to the directory (folder) where you want the project to live
   - In this directory, run the command `git clone https://github.com/inventioncorps/icb-website-react.git icb-website`
