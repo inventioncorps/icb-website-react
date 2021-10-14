@@ -52,7 +52,7 @@ If you have any questions about this process, please use the internet as a resou
 
   - Commit often (with useful commit messages). This is best practice and it means you can pick-up where you left-off or revert to a previous state easily.
   - Push somewhat often. This lets you 'save' your work remotely, so anyone else can see what you are doing and you won't lose everything if your computer burns or drowns.
-  - Merge any updates to the feature you are working on if changes have in the develop branch using the following steps:
+  - If any changes have been made in the `develop` branch, merge those changes into your branch first by using the following steps:
     - Enter the develop branch using `git checkout develop`
     - Pull the newest changes using `git pull`
     - Go to your own branch using  `git checkout feature/<name>-<description>`
