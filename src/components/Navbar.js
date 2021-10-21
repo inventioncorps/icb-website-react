@@ -1,16 +1,36 @@
 import React from 'react'
 import Link from 'next/link'
+import NavItem from './NavItem'
 
 const Navbar = () => {
-    const navItems = [
-        { name: 'Home', path: '/' },
-        { name: 'Apply', path: '/apply' },
-        { name: 'Our Story', path: '/our-story' },
-        { name: 'Partner', path: '/partner' },
-        { name: 'Projects', path: '/projects' },
-        { name: 'Showcase', path: '/showcase' },
-        { name: 'Members', path: '/members' }]
+
     
+     const navItems = [
+         {
+             name: 'About', subItems: [
+                 {
+                item: 'Our Story',
+                path: '/our-story',
+                color: 'red',
+             },
+                 {item: 'Members',
+                path: '/members',
+                color: 'red',}
+             ]
+         },
+         {
+             name: 'Work', subItems: [
+                 {
+                item: 'Projects',
+                path: '/projects',
+                color: 'green',
+             },
+                 {item: 'Showcase',
+                path: '/showcase',
+                color: 'green',}
+             ]
+         },
+     ]
     const navStyle = {
         position: 'fixed',
         display: 'flex',
@@ -29,9 +49,7 @@ const Navbar = () => {
         <div style={navStyle}>
             {navItems.map((item) => (
                 <div style={navItemStyle} key={item.name}>
-                    <Link href={item.path}>
-                        {item.name}
-                    </Link>
+                    <NavItem name={item.name} subItems={item.subItems}/>
                 </div>
             ))}</div>
     )
