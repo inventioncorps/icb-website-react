@@ -14,12 +14,12 @@ const Navbar = () => {
                 color: 'red',
              },
                 {
-                item: 'Members',
+                name: 'Members',
                 path: '/members',
                 color: 'red',
                 }
              ],
-             path = '' // TODO find better way of having no path
+             path: '' // TODO find better way of having no path
          },
          {
              name: 'Work',
@@ -35,7 +35,7 @@ const Navbar = () => {
                     color: 'green',
                 }
              ],
-             path = '' // TODO find better way of having no path
+             path: '' // TODO find better way of having no path
          },
      ]
     const navStyle = {

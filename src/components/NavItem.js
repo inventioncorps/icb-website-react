@@ -4,24 +4,33 @@ import NavSubItem from './NavSubItem'
 
 const NavItem = ({ name, path, subItems}) => {
 
-    if (link !== '' && !subItems) { // if link exists, item cannot have subitems.
+    const hover = false //TODO implement change on hover
+    if (!subItems) { // if link exists, item cannot have subitems.
         return (
             <Link href={path}>
                 {name}
             </Link>
         )
-    } else {
+    } else if (hover) {
         return (
             <div>
+                {name}
                 {/* Note this div should only be displayed on hover. */}
                 {subItems.map((item) => (
-                <div style='' key={item.name}>
+                <div key={item.name}>
                     <NavSubItem name={item.name} path={item.path}/>
                 </div>
                 ))
             }
             </div>
             )
+    }
+    else {
+        return (
+            <div>
+                {name}
+            </div>
+        )
     }
 }
 
