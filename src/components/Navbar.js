@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import NavItem from './NavItem'
 
 const Navbar = () => {
@@ -7,28 +6,36 @@ const Navbar = () => {
     
      const navItems = [
          {
-             name: 'About', subItems: [
+             name: 'About',
+             subItems: [
                  {
-                item: 'Our Story',
+                name: 'Our Story',
                 path: '/our-story',
                 color: 'red',
              },
-                 {item: 'Members',
+                {
+                item: 'Members',
                 path: '/members',
-                color: 'red',}
-             ]
+                color: 'red',
+                }
+             ],
+             path = '' // TODO find better way of having no path
          },
          {
-             name: 'Work', subItems: [
-                 {
-                item: 'Projects',
-                path: '/projects',
-                color: 'green',
-             },
-                 {item: 'Showcase',
-                path: '/showcase',
-                color: 'green',}
-             ]
+             name: 'Work',
+             subItems: [
+                {
+                    name: 'Projects',
+                    path: '/projects',
+                    color: 'green',
+                },
+                {
+                    name: 'Showcase',
+                    path: '/showcase',
+                    color: 'green',
+                }
+             ],
+             path = '' // TODO find better way of having no path
          },
      ]
     const navStyle = {
@@ -46,10 +53,11 @@ const Navbar = () => {
         width: '10vw',
     }
     return (
+        // TODO render ICB logo and link to home button
         <div style={navStyle}>
             {navItems.map((item) => (
                 <div style={navItemStyle} key={item.name}>
-                    <NavItem name={item.name} subItems={item.subItems}/>
+                    <NavItem name={item.name} subItems={item.subItems} link={item.link}/>
                 </div>
             ))}</div>
     )
