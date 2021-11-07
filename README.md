@@ -20,6 +20,16 @@ If you have any questions about this process, please use the internet as a resou
 
 ### Getting started
 
+- If you do not have git installed, or you are unsure whether you have git on your machine, follow [this guide](https://github.com/git-guides/install-git).
+- The following instructions are for setting up your github credentials.
+  - Download GitHub CLI or Git Credential Manager Core using the online [instructions](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git). *(Git Credential Manager Core is recommended as the only required steps are downloading it GitHub CLI will require some set up)*
+  - Log into GitHub and click on the icon on the top right in order to access Settings>Developer settings>Personal Access Token.
+  - Click on **Generate new token**
+  - Type in a description for this auth token and set the expiration time.
+  - Under **Select Scopes** select the check box next to **repo**. This will give you read write access to which ever repository you are contributing to.
+  - Click on **Generate token**
+  - Copy the token and save it somewhere temporarily.
+  - When you clone the repository in the next step, you will be asked to provide authentication. Use your Github user name and Authentication token when prompted. Your credentials will be saved until your token expires.
 - If you have never worked on the project before, start by cloning the repository onto your local machine.
   - In your terminal on your computer, navigate to the directory (folder) where you want the project to live
   - In this directory, run the command `git clone https://github.com/inventioncorps/icb-website-react.git icb-website`
@@ -42,9 +52,15 @@ If you have any questions about this process, please use the internet as a resou
 
   - Commit often (with useful commit messages). This is best practice and it means you can pick-up where you left-off or revert to a previous state easily.
   - Push somewhat often. This lets you 'save' your work remotely, so anyone else can see what you are doing and you won't lose everything if your computer burns or drowns.
+  - If any changes have been made in the `develop` branch, merge those changes into your branch first by using the following steps:
+    - Enter the develop branch using `git checkout develop`
+    - Pull the newest changes using `git pull`
+    - Go to your own branch using  `git checkout feature/<name>-<description>`
+    - Merge the new changes in using `git merge develop`
 
 - When you are done working on a feature:
   - Remember to commit and push if you have not already.
+  - Make sure you have merged all the up to date changes from the remote develop branch.
   - Create a pull-request for you feature on github.
   - Add reviewer(s) to the pull-request.
   - **DO NOT** merge your own pull request - unless you have a very special reason for doing so.
