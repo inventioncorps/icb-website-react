@@ -10,4 +10,4 @@ const Introduction = (props) =>{
     </div>
     );
 }
-export default TeamPicture;
+export default Introduction;
