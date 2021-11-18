@@ -7,40 +7,43 @@
   z-index: 1;
 }
 
-button {
+.footerButton {
+  display: flex;
   font-size: 2.5em;
   border: none;
   padding: 0;
   background: transparent;
   cursor: pointer;
+  width: 50px;
 }
 
-ul {
+.listContainer {
   display: flex;
   padding: 0;
 }
 
-li {
+.listElement {
   margin: 0 10px;
   list-style: none;
   padding: 0;
+  width: 50px;
 }
 
 /* button:hover{
     color: rgb(6, 157, 177);
   } */
 
-a {
+.link {
   color: #202020;
 }
 
-a:hover {
+.link:hover {
   text-decoration: none;
   color: #787878;
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
 
-p {
+.bottom {
   margin-top: -7.5px;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './footer.css';
+import styles from '../../styles/footer.module.css';
 import Icon from './Icon';
 
 // import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
@@ -68,7 +68,7 @@ class Footer extends Component {
 
         return (
             <div className={styles.container}>
-                <ul>
+                <ul className={styles.listContainer}>
                     {icons.map( (icon) =>
                         <Icon 
                         name={icon.name}
@@ -82,7 +82,7 @@ class Footer extends Component {
                         />
                     )}
                 </ul>
-                <p>Made with &hearts; by the<span> <a class="underline" href="webteam.html">Invention Corps Web Team</a> </span></p>
+                <p className={styles.bottom}>Made with &hearts; by the<span> <a className={styles.a} href="webteam.html">Invention Corps Web Team</a> </span></p>
             </div>
         )
 
